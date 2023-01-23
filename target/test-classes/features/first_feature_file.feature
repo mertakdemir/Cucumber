@@ -17,6 +17,8 @@ Feature: first feature file
     Then verify page title contains TeaPot
     Then close the application
 
+
+
 #  All feature files must begin with "Feature:" keyword
 #  Feature : To declare the file as a cucumber feature file. Mandatory. There can be ONLY one Feature: keyword
 #  Scenario : To create test case. In a feature file there may be more than one Scenario:

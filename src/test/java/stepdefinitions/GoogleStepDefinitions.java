@@ -19,6 +19,7 @@ public class GoogleStepDefinitions {
         Driver.getDriver().get(ConfigReader.getProperty("google_url"));
         try{
             ReusableMethods.waitFor(2);
+            googlePage = new GooglePage();
             googlePage.popUpAccept.click();//accept pop up if visible. Catch the error and continue if not visible
         }catch (Exception e){
         }
