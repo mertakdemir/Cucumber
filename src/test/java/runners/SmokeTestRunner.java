@@ -1,6 +1,5 @@
 package runners;
 
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -12,20 +11,13 @@ import org.junit.runner.RunWith;
                 "html:target/default-cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml",
-                "rerun:target/failedRerun.txt",
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                "rerun:target/failedRerun.txt"
         },
         monochrome=true,
         features = "./src/test/resources/features",//PATH OF FEATURES FOLDER
-        glue = {"stepdefinitions", "hooks"},//PATH OF STEP DEFINITIONS
+        glue = {"stepdefinitions"},//PATH OF STEP DEFINITIONS
         dryRun = false,
-        tags = "@failed_tests"
+        tags = "@scenario_outline"
 )
-public class Runner {
-
-
-    /*
-    //IF dryRun = true : RUN DRY, JUST GIVE ME THE MISSING STEP DEFINITIONS. DON'T RUN THE TEST CASES
-        //dryRun = false ; when we are doing test execution. dryRun = true ; when we are generation missing step definitions.
-     */
+public class SmokeTestRunner {
 }

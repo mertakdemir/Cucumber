@@ -1,19 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="8.119" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="hooks_test" name="TC_01_" time="7.943">
-<failure type="java.lang.AssertionError">
-<![CDATA[java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.LoginStepDefinitions.verify_the_next_page_url_contains_login_keyword(LoginStepDefinitions.java:46)
-	at ✽.verify the next page url contains login keyword(file:///C:/Users/akdem/IdeaProjects/my-cucumber-project/src/test/resources/features/day27_failed_test_cases.feature:8)
-]]>
-</failure>
+<testsuite name="Cucumber" time="52.43" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="Search_Feature" name="TC_01_tesla_search" time="23.185">
 <system-out><![CDATA[
-Given user is on "https://www.bluerentalcars.com/login" page................passed
-And user enters customer_email and customer_password........................passed
-Then verify the next page url contains login keyword........................failed
+Given user is on the google home page.......................................passed
+When user search for "tesla" on google......................................passed
+Then verify page title contains "tesla".....................................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search_Feature" name="TC_01_tesla_search" time="8.98">
+<system-out><![CDATA[
+Given user is on the google home page.......................................passed
+When user search for "nio" on google........................................passed
+Then verify page title contains "nio".......................................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search_Feature" name="TC_01_tesla_search" time="9.863">
+<system-out><![CDATA[
+Given user is on the google home page.......................................passed
+When user search for "mercedes" on google...................................passed
+Then verify page title contains "mercedes"..................................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search_Feature" name="TC_01_tesla_search" time="10.176">
+<system-out><![CDATA[
+Given user is on the google home page.......................................passed
+When user search for "bmw" on google........................................passed
+Then verify page title contains "bmw".......................................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
+application..................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
