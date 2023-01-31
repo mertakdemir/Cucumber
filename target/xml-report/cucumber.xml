@@ -1,39 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="52.43" tests="4" skipped="0" failures="0" errors="0">
-<testcase classname="Search_Feature" name="TC_01_tesla_search" time="23.185">
+<testsuite name="Cucumber" time="12.177" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="grid_feature" name="TC01_running_tests_on_Chrome" time="6.766">
 <system-out><![CDATA[
-Given user is on the google home page.......................................passed
-When user search for "tesla" on google......................................passed
-Then verify page title contains "tesla".....................................passed
-Then close the application..................................................passed
+Given user is on the application_url using Chrome...........................passed
+Then verify the page title contains "Techpro Education".....................passed
+Then close the remote driver................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Search_Feature" name="TC_01_tesla_search" time="8.98">
+<testcase classname="grid_feature" name="TC_02_running_tests_on_Firefox" time="5.226">
 <system-out><![CDATA[
-Given user is on the google home page.......................................passed
-When user search for "nio" on google........................................passed
-Then verify page title contains "nio".......................................passed
-Then close the application..................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Search_Feature" name="TC_01_tesla_search" time="9.863">
-<system-out><![CDATA[
-Given user is on the google home page.......................................passed
-When user search for "mercedes" on google...................................passed
-Then verify page title contains "mercedes"..................................passed
-Then close the application..................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Search_Feature" name="TC_01_tesla_search" time="10.176">
-<system-out><![CDATA[
-Given user is on the google home page.......................................passed
-When user search for "bmw" on google........................................passed
-Then verify page title contains "bmw".......................................passed
-Then close the application..................................................passed
-]]></system-out>
-</testcase>
-</testsuite>
-application..................................................passed
+Given user is on the application_url using Firefox..........................passed
+Then verify the page title contains "Techpro Education".....................passed
+Then close the remote driver................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
