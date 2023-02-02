@@ -1,5 +1,4 @@
 package runners;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -12,13 +11,12 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml",
                 "rerun:target/failedRerun.txt"
-
         },
         monochrome=true,
-        features = "./src/test/resources/features/seleniumgrid",//PATH OF FEATURES FOLDER
+        features = "./src/test/resources/features/jdbc",//PATH OF FEATURES FOLDER
         glue = {"stepdefinitions"},//PATH OF STEP DEFINITIONS
         dryRun = false,
-        tags = "@grid_feature"
+        tags = "@db_read"
 )
-public class GridRunner {
+public class DBRunners {
 }
