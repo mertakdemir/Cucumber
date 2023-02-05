@@ -19,7 +19,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",//PATH OF FEATURES FOLDER
         glue = {"stepdefinitions", "hooks"},//PATH OF STEP DEFINITIONS
         dryRun = false,
-        tags = "@db_read"
+        tags = "@failed_tests"
 )
 public class Runner {
 

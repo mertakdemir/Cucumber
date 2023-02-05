@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Feb 5, 2023 11:19:19 AM</span></a>
+<a href="#"><span class="badge badge-primary">Feb 5, 2023 12:15:49 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Feb 5, 2023 11:19:19 AM</h3>
+<h3>Feb 5, 2023 12:15:49 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Feb 5, 2023 11:19:30 AM</h3>
+<h3>Feb 5, 2023 12:15:58 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -130,7 +130,7 @@
 <div class="card-footer">
 <div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='100%'><b>5</b> scenarios failed,
+<small data-tooltip='100%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='33%'><b>5</b> steps passed</small></div>
+<div><small data-tooltip='75%'><b>3</b> steps passed</small></div>
 <div>
-<small data-tooltip='33%'><b>5</b> steps failed,
-<b>5</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='25%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"db_customer_testing":10.864
+"hooks_test":8.596
 };
 </script>
 <div class="row">
@@ -177,9 +177,9 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@db_read</td>
+<td>@failed_tests</td>
 <td>0</td>
-<td>6</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0%</td>
@@ -213,15 +213,15 @@ warningParent: 0,
 skipParent: 0,
 childCount: 5,
 passChild: 0,
-failChild: 5,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 5,
-failGrandChild: 5,
+passGrandChild: 3,
+failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 5,
+skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -243,7 +243,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@db_read</a>
+<a class="dropdown-item" href="#">@failed_tests</a>
 </ul>
 </li>
 </ul>
@@ -254,9 +254,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">db_customer_testing</p>
+            <p class="name">hooks_test</p>
             <p class="text-sm">
-              <span>11:19:19 AM</span> / <span>00:00:10:864</span>
+              <span>12:15:50 PM</span> / <span>00:00:08:596</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -264,10 +264,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">db_customer_testing</h5>
-<span class='badge badge-success'>02.05.2023 11:19:19 AM</span>
-<span class='badge badge-danger'>02.05.2023 11:19:30 AM</span>
-<span class='badge badge-default'>00:00:10:864</span>
+<h5 class="test-status text-fail">hooks_test</h5>
+<span class='badge badge-success'>02.05.2023 12:15:50 PM</span>
+<span class='badge badge-danger'>02.05.2023 12:15:58 PM</span>
+<span class='badge badge-default'>00:00:08:596</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -279,7 +279,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>TC01_read_customer_ssn_info</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>TC_01_</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
@@ -287,25 +287,34 @@ eventsCount: 5,
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step fail-bg" title="stepdefinitions.DatabaseStepDefinitions.user_gets_the_column_from_table(java.lang.String,java.lang.String)">
-                <span>And user gets the column "*" from table "jhi_user"</span>
+              <div class="step pass-bg" title="stepdefinitions.DataTablesStepDefinitions.user_is_on_page(java.lang.String)">
+                <span>Given user is on "https://www.bluerentalcars.com/login" page</span>
       <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException
-	at utilities.DBUtils.executeQuery(DBUtils.java:41)
-	at stepdefinitions.DatabaseStepDefinitions.user_gets_the_column_from_table(DatabaseStepDefinitions.java:17)
-	at ✽.user gets the column "*" from table "jhi_user"(file:///C:/Users/akdem/IdeaProjects/my-cucumber-project/./src/test/resources/features/jdbc/jdbc_read_data.feature:6)
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.LoginStepDefinitions.user_enters_customer_email_and_customer_password(io.cucumber.datatable.DataTable)">
+                <span>And user enters customer_email and customer_password</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>jack@gmail.com</td><td>12345</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinitions.LoginStepDefinitions.verify_the_next_page_url_contains_login_keyword()">
+                <span>Then verify the next page url contains login keyword</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.LoginStepDefinitions.verify_the_next_page_url_contains_login_keyword(LoginStepDefinitions.java:46)
+	at ✽.verify the next page url contains login keyword(file:///C:/Users/akdem/IdeaProjects/my-cucumber-project/./src/test/resources/features/day27_failed_test_cases.feature:8)
 </textarea>
       
       </div>
               </div>
-              <div class="step skip-bg" title="stepdefinitions.DatabaseStepDefinitions.user_reads_all_the_column_data(java.lang.String)">
-                <span>Then user reads all the column "login" data</span>
-      <div>Step skipped
-      </div>
-              </div>
               <div class="step pass-bg" title="AFTER">
                 <span>hooks.Hooks.tearDownScenario(io.cucumber.java.Scenario)</span>
-      <div>failed_scenarioTC01_read_customer_ssn_info
+      <div>failed_scenarioTC_01_
           <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='../embedded1.png' src="../embedded1.png">
     
@@ -315,180 +324,6 @@ eventsCount: 5,
       </div>
               </div>
           </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="7"><span class="badge log fail-bg mr-2">Fail</span>TC02_read_customer_firstname_info</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
-      </div>
-    </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step fail-bg" title="stepdefinitions.DatabaseStepDefinitions.user_gets_the_column_from_table(java.lang.String,java.lang.String)">
-                <span>And user gets the column "*" from table "jhi_user"</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException
-	at utilities.DBUtils.executeQuery(DBUtils.java:41)
-	at stepdefinitions.DatabaseStepDefinitions.user_gets_the_column_from_table(DatabaseStepDefinitions.java:17)
-	at ✽.user gets the column "*" from table "jhi_user"(file:///C:/Users/akdem/IdeaProjects/my-cucumber-project/./src/test/resources/features/jdbc/jdbc_read_data.feature:14)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepdefinitions.DatabaseStepDefinitions.user_reads_all_the_column_data(java.lang.String)">
-                <span>Then user reads all the column "first_name" data</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>hooks.Hooks.tearDownScenario(io.cucumber.java.Scenario)</span>
-      <div>failed_scenarioTC02_read_customer_firstname_info
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded2.png' src="../embedded2.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="12"><span class="badge log fail-bg mr-2">Fail</span>TC03_read_customer_firstname_info</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
-      </div>
-    </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step fail-bg" title="stepdefinitions.DatabaseStepDefinitions.user_gets_the_column_from_table(java.lang.String,java.lang.String)">
-                <span>And user gets the column "*" from table "tp_customer"</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException
-	at utilities.DBUtils.executeQuery(DBUtils.java:41)
-	at stepdefinitions.DatabaseStepDefinitions.user_gets_the_column_from_table(DatabaseStepDefinitions.java:17)
-	at ✽.user gets the column "*" from table "tp_customer"(file:///C:/Users/akdem/IdeaProjects/my-cucumber-project/./src/test/resources/features/jdbc/jdbc_read_data.feature:21)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepdefinitions.DatabaseStepDefinitions.user_reads_all_the_column_data(java.lang.String)">
-                <span>Then user reads all the column "email" data</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>hooks.Hooks.tearDownScenario(io.cucumber.java.Scenario)</span>
-      <div>failed_scenarioTC03_read_customer_firstname_info
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded3.png' src="../embedded3.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="17"><span class="badge log fail-bg mr-2">Fail</span>TC04_read_customer_account_types</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
-      </div>
-    </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step fail-bg" title="stepdefinitions.DatabaseStepDefinitions.user_gets_the_column_from_table(java.lang.String,java.lang.String)">
-                <span>And user gets the column "*" from table "tp_account"</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException
-	at utilities.DBUtils.executeQuery(DBUtils.java:41)
-	at stepdefinitions.DatabaseStepDefinitions.user_gets_the_column_from_table(DatabaseStepDefinitions.java:17)
-	at ✽.user gets the column "*" from table "tp_account"(file:///C:/Users/akdem/IdeaProjects/my-cucumber-project/./src/test/resources/features/jdbc/jdbc_read_data.feature:26)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepdefinitions.DatabaseStepDefinitions.user_reads_all_the_column_data(java.lang.String)">
-                <span>Then user reads all the column "account_type" data</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>hooks.Hooks.tearDownScenario(io.cucumber.java.Scenario)</span>
-      <div>failed_scenarioTC04_read_customer_account_types
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded4.png' src="../embedded4.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="22"><span class="badge log fail-bg mr-2">Fail</span>TC05_verify_account_types</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
-      </div>
-    </div>
-        <div class="scenario_outline ">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="23"><span class="badge log fail-bg mr-2">Fail</span>TC05_verify_account_types</div>
-                    <div class="status-avatar float-right">
-                      <i class="fa fa-paperclip"></i>
-                    </div>
-                </div>
-              </div>
-              <div class="card-body mt-3 ">
-                  <div class="step fail-bg">
-                    <span>And user gets the column "*" from table "tp_account"</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException
-	at utilities.DBUtils.executeQuery(DBUtils.java:41)
-	at stepdefinitions.DatabaseStepDefinitions.user_gets_the_column_from_table(DatabaseStepDefinitions.java:17)
-	at ✽.user gets the column "*" from table "tp_account"(file:///C:/Users/akdem/IdeaProjects/my-cucumber-project/./src/test/resources/features/jdbc/jdbc_read_data.feature:31)
-</textarea>
-      
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>Then verify table "tp_account" and column "account_type" contains data "CREDIT_CARD"</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>hooks.Hooks.tearDownScenario(io.cucumber.java.Scenario)</span>
-      <div>failed_scenarioTC05_verify_account_types
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded5.png' src="../embedded5.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
         </div>
   </div>
 </div>
@@ -514,15 +349,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>6</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@db_read</p>
-<p class="duration text-sm">6 tests</p>
+<p class="name">@failed_tests</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@db_read</h4>
-<span status="fail" class='badge log badge-danger'>6 failed</span>
+<h4>@failed_tests</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -535,61 +370,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>11:19:19 AM</td>
+<td>12:15:50 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC01_read_customer_ssn_info</a>
+<a href="#" class="linked" test-id='1' id='2'>TC_01_</a>
 <div class="">
-<span class="badge badge-default">db_customer_testing.TC01_read_customer_ssn_info</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>11:19:22 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='7'>TC02_read_customer_firstname_info</a>
-<div class="">
-<span class="badge badge-default">db_customer_testing.TC02_read_customer_firstname_info</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>11:19:24 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='12'>TC03_read_customer_firstname_info</a>
-<div class="">
-<span class="badge badge-default">db_customer_testing.TC03_read_customer_firstname_info</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>11:19:26 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='17'>TC04_read_customer_account_types</a>
-<div class="">
-<span class="badge badge-default">db_customer_testing.TC04_read_customer_account_types</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>11:19:28 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='22'>TC05_verify_account_types</a>
-<div class="">
-<span class="badge badge-default">db_customer_testing.TC05_verify_account_types</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>11:19:28 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='23'>TC05_verify_account_types</a>
-<div class="">
-<span class="badge badge-default">db_customer_testing.TC05_verify_account_types</span>
+<span class="badge badge-default">hooks_test.TC_01_</span>
 </div>
 </td>
 </tr>
@@ -616,15 +401,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>5</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.lang.NullPointerException</p>
-<p class="duration text-sm">5 tests</p>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.NullPointerException</h4>
-<span status="fail" class='badge log badge-danger'>5 failed</span>
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -637,51 +422,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>11:19:19 AM</td>
+<td>12:15:54 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='4'>And user gets the column "*" from table "jhi_user"</a>
+<a href="#" class="linked" test-id='1' id='6'>Then verify the next page url contains login keyword</a>
 <div class="">
-<span class="badge badge-default">db_customer_testing.TC01_read_customer_ssn_info.And user gets the column "*" from table "jhi_user"</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>11:19:22 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='9'>And user gets the column "*" from table "jhi_user"</a>
-<div class="">
-<span class="badge badge-default">db_customer_testing.TC02_read_customer_firstname_info.And user gets the column "*" from table "jhi_user"</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>11:19:24 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='14'>And user gets the column "*" from table "tp_customer"</a>
-<div class="">
-<span class="badge badge-default">db_customer_testing.TC03_read_customer_firstname_info.And user gets the column "*" from table "tp_customer"</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>11:19:26 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='19'>And user gets the column "*" from table "tp_account"</a>
-<div class="">
-<span class="badge badge-default">db_customer_testing.TC04_read_customer_account_types.And user gets the column "*" from table "tp_account"</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>11:19:28 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='25'>And user gets the column "*" from table "tp_account"</a>
-<div class="">
-<span class="badge badge-default">db_customer_testing.TC05_verify_account_types.And user gets the column "*" from table "tp_account"</span>
+<span class="badge badge-default">hooks_test.TC_01_.Then verify the next page url contains login keyword</span>
 </div>
 </td>
 </tr>
