@@ -10,7 +10,7 @@ public class ExcelUtil {
     private Workbook workBook;
     private Sheet workSheet;
     private String path;
-    public ExcelUtil(String path, String sheetName) {//This Constructor is to open and access the excel file
+    public ExcelUtil(String path, String sheetName) {//This Constructor is to open and access the Excel file
         this.path = path;
         try {
             // Opening the Excel file

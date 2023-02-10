@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="8.822" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="hooks_test" name="TC_01_" time="8.654">
-<failure type="java.lang.AssertionError">
-<![CDATA[java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.LoginStepDefinitions.verify_the_next_page_url_contains_login_keyword(LoginStepDefinitions.java:46)
-	at ✽.verify the next page url contains login keyword(file:///C:/Users/akdem/IdeaProjects/my-cucumber-project/./src/test/resources/features/day27_failed_test_cases.feature:8)
-]]>
-</failure>
+<testsuite name="Cucumber" time="6.998" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="User should be able to reserve a car" name="User should be able to reserve a car as customer service profile" time="6.836">
 <system-out><![CDATA[
-Given user is on "https://www.bluerentalcars.com/login" page................passed
-And user enters customer_email and customer_password........................passed
-Then verify the next page url contains login keyword........................failed
+When user login the page....................................................passed
+Given user is on the home page..............................................passed
+And select a car............................................................passed
+And enter pick up field.....................................................passed
+And enter drop off field....................................................passed
+And click continue reservation..............................................passed
+And verify complete reservation screen pops up..............................passed
+And enter card number.......................................................passed
+And enter name on the card..................................................passed
+And enter expire date and CVC...............................................passed
+And checks the agreement....................................................passed
+And click complete reservation..............................................passed
+Then verify ‘Reservation created successfully’ pop up.......................passed
+And navigated to Reservations screen........................................passed
+And verify the last reservation is created..................................passed
+When you click on the last reservation......................................passed
+Then verify reservation detail page is displayed............................passed
+And verify the table has the following fields: Model, Doors, Seats, Luggage, Transmission, Air Conditioning, Fuel Type, Age.passed
+And click on bath to reservations...........................................passed
+And verify Reservations page is displayed...................................passed
+And click on Home link......................................................passed
+Then verify the home page is displayed......................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
