@@ -1,29 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="6.998" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="User should be able to reserve a car" name="User should be able to reserve a car as customer service profile" time="6.836">
+<testsuite name="Cucumber" time="46.102" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="Search_Feature" name="TC_01_tesla_search" time="13.248">
 <system-out><![CDATA[
-When user login the page....................................................passed
-Given user is on the home page..............................................passed
-And select a car............................................................passed
-And enter pick up field.....................................................passed
-And enter drop off field....................................................passed
-And click continue reservation..............................................passed
-And verify complete reservation screen pops up..............................passed
-And enter card number.......................................................passed
-And enter name on the card..................................................passed
-And enter expire date and CVC...............................................passed
-And checks the agreement....................................................passed
-And click complete reservation..............................................passed
-Then verify ‘Reservation created successfully’ pop up.......................passed
-And navigated to Reservations screen........................................passed
-And verify the last reservation is created..................................passed
-When you click on the last reservation......................................passed
-Then verify reservation detail page is displayed............................passed
-And verify the table has the following fields: Model, Doors, Seats, Luggage, Transmission, Air Conditioning, Fuel Type, Age.passed
-And click on bath to reservations...........................................passed
-And verify Reservations page is displayed...................................passed
-And click on Home link......................................................passed
-Then verify the home page is displayed......................................passed
+Given user is on the google home page.......................................passed
+When user search for "tesla" on google......................................passed
+Then verify page title contains "tesla".....................................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search_Feature" name="TC_01_tesla_search" time="12.558">
+<system-out><![CDATA[
+Given user is on the google home page.......................................passed
+When user search for "nio" on google........................................passed
+Then verify page title contains "nio".......................................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search_Feature" name="TC_01_tesla_search" time="8.955">
+<system-out><![CDATA[
+Given user is on the google home page.......................................passed
+When user search for "mercedes" on google...................................passed
+Then verify page title contains "mercedes"..................................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search_Feature" name="TC_01_tesla_search" time="11.061">
+<system-out><![CDATA[
+Given user is on the google home page.......................................passed
+When user search for "bmw" on google........................................passed
+Then verify page title contains "bmw".......................................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
+plication..................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
