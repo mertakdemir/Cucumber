@@ -1,6 +1,7 @@
 pages\BlueRentalCarHomeworkPage1.class
 pages\MedunnaLoginPage.class
 stepdefinitions\GoogleStepDefinitions.class
+pages\AlloverCommerceSignInPage.class
 utilities\Driver$1.class
 utilities\ExcelUtil.class
 pages\MedunnaRoomPage.class
@@ -14,6 +15,7 @@ utilities\ReusableMethods$2.class
 runners\Runner.class
 runners\TestRunner.class
 utilities\Driver.class
+utilities\JSUtils.class
 runners\FailedScenarioRunner.class
 pages\DataTablesPage.class
 runners\GridRunner.class
@@ -25,11 +27,15 @@ pages\LoginPage.class
 stepdefinitions\DatabaseStepDefinitions.class
 utilities\ReusableMethods$1.class
 pages\GooglePage.class
+stepdefinitions\AlloverCommerceSignInStepDefinitions.class
+pages\AlloverCommerceHomePage.class
+pages\AlloverCommerceMyAccountPage.class
 stepdefinitions\MedunnaSignInStepDefinition.class
 stepdefinitions\MedunnaRoomsStepDefinitions.class
 utilities\ReusableMethods.class
 stepdefinitions\ReserveACarStepDefinitions.class
 stepdefinitions\RegExStepDefinitions.class
+pages\AlloverCommerceShippingAddressPage.class
 utilities\ConfigReader.class
 utilities\DBUtils.class
 stepdefinitions\GridStepDefinitions.class

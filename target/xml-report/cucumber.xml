@@ -1,39 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="46.102" tests="4" skipped="0" failures="0" errors="0">
-<testcase classname="Search_Feature" name="TC_01_tesla_search" time="13.248">
+<testsuite name="Cucumber" time="50.854" tests="2" skipped="0" failures="2" errors="0">
+<testcase classname="User should be able to add shipping address" name="US_004_TC_001 - Example #1.1" time="36.015">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//a[.='Add'])[2]&quot;}
+  (Session info: chrome=109.0.5414.121)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f2d42ff2a7eef37b481bed7e23c207fb, findElement {using=xpath, value=(//a[.='Add'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.121, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\akdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49197}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49197/devtoo..., se:cdpVersion: 109.0.5414.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f2d42ff2a7eef37b481bed7e23c207fb">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[.='Add'])[2]"}
+  (Session info: chrome=109.0.5414.121)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f2d42ff2a7eef37b481bed7e23c207fb, findElement {using=xpath, value=(//a[.='Add'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.121, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\akdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49197}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49197/devtoo..., se:cdpVersion: 109.0.5414.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f2d42ff2a7eef37b481bed7e23c207fb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at stepdefinitions.AlloverCommerceSignInStepDefinitions.user_clicks_on_add_button_which_belongs_to_shipping_address(AlloverCommerceSignInStepDefinitions.java:62)
+	at ✽.user clicks on Add button which belongs to Shipping address(file:///C:/Users/akdem/IdeaProjects/my-cucumber-project/./src/test/resources/features/US_004_TC_001.feature:13)
+]]>
+</failure>
 <system-out><![CDATA[
-Given user is on the google home page.......................................passed
-When user search for "tesla" on google......................................passed
-Then verify page title contains "tesla".....................................passed
-Then close the application..................................................passed
+Given user goes to Allover Commerce home page "allover_commerce_url"........passed
+When user clicks on sign in icon............................................passed
+And user enters email "abacada@gmail.com"...................................passed
+And user enters password "abacada123!"......................................passed
+And user clicks on rememberMe button........................................passed
+And user clicks on sign in button...........................................passed
+And user clicks on My Account button........................................passed
+And user clicks on Addresses button.........................................passed
+And user clicks on Add button which belongs to Shipping address.............failed
+And user enters the first name for Shipping address "Mert"..................skipped
+And user enters the last name for Shipping address "Akdemir"................skipped
+And user enters the company name for Shipping address "techpro".............skipped
+And user selects country name...............................................skipped
+And user enters street name for Shipping address "slagsta"..................skipped
+And user enters apartment name for Shipping address "hallunda"..............skipped
+And user enters city name for Shipping address "stockholm"..................skipped
+And user selects province...................................................skipped
+And user enters the ZIP Code for Shipping address "14573"...................skipped
+And user clicks on save address button......................................skipped
+Then verify the shipping address has been added successfully................skipped
+And close the application...................................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Search_Feature" name="TC_01_tesla_search" time="12.558">
+<testcase classname="User should be able to add shipping address" name="US_004_TC_001 - Example #1.2" time="14.619">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.='Sign In']&quot;}
+  (Session info: chrome=109.0.5414.121)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f2d42ff2a7eef37b481bed7e23c207fb, findElement {using=xpath, value=//span[.='Sign In']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.121, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\akdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49197}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49197/devtoo..., se:cdpVersion: 109.0.5414.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f2d42ff2a7eef37b481bed7e23c207fb">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[.='Sign In']"}
+  (Session info: chrome=109.0.5414.121)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f2d42ff2a7eef37b481bed7e23c207fb, findElement {using=xpath, value=//span[.='Sign In']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.121, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\akdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49197}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49197/devtoo..., se:cdpVersion: 109.0.5414.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f2d42ff2a7eef37b481bed7e23c207fb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at stepdefinitions.AlloverCommerceSignInStepDefinitions.user_clicks_on_sign_in_icon(AlloverCommerceSignInStepDefinitions.java:33)
+	at ✽.user clicks on sign in icon(file:///C:/Users/akdem/IdeaProjects/my-cucumber-project/./src/test/resources/features/US_004_TC_001.feature:6)
+]]>
+</failure>
 <system-out><![CDATA[
-Given user is on the google home page.......................................passed
-When user search for "nio" on google........................................passed
-Then verify page title contains "nio".......................................passed
-Then close the application..................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Search_Feature" name="TC_01_tesla_search" time="8.955">
-<system-out><![CDATA[
-Given user is on the google home page.......................................passed
-When user search for "mercedes" on google...................................passed
-Then verify page title contains "mercedes"..................................passed
-Then close the application..................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Search_Feature" name="TC_01_tesla_search" time="11.061">
-<system-out><![CDATA[
-Given user is on the google home page.......................................passed
-When user search for "bmw" on google........................................passed
-Then verify page title contains "bmw".......................................passed
-Then close the application..................................................passed
-]]></system-out>
-</testcase>
-</testsuite>
-plication..................................................passed
+Given user goes to Allover Commerce home page "allover_commerce_url"........passed
+When user clicks on sign in icon............................................failed
+And user enters email "abaca@gmail.com".....................................skipped
+And user enters password "abaca123!"........................................skipped
+And user clicks on rememberMe button........................................skipped
+And user clicks on sign in button...........................................skipped
+And user clicks on My Account button........................................skipped
+And user clicks on Addresses button.........................................skipped
+And user clicks on Add button which belongs to Shipping address.............skipped
+And user enters the first name for Shipping address "Meliha"................skipped
+And user enters the last name for Shipping address "Er".....................skipped
+And user enters the company name for Shipping address "cydeo"...............skipped
+And user selects country name...............................................skipped
+And user enters street name for Shipping address "tre kallors"..............skipped
+And user enters apartment name for Shipping address "alby"..................skipped
+And user enters city name for Shipping address "norsborg"...................skipped
+And user selects province...................................................skipped
+And user enters the ZIP Code for Shipping address "14574"...................skipped
+And user clicks on save address button......................................skipped
+Then verify the shipping address has been added successfully................skipped
+And close the application...................................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

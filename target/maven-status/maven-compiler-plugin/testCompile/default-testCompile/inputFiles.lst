@@ -4,8 +4,10 @@ C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\hooks\Hooks.java
 C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\runners\TestRunner.java
 C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\stepdefinitions\DataTablesStepDefinitions.java
 C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\stepdefinitions\LoginStepDefinitions.java
+C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\pages\AlloverCommerceHomePage.java
 C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\runners\FailedScenarioRunner.java
 C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\utilities\ExcelUtil.java
+C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\pages\AlloverCommerceShippingAddressPage.java
 C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\stepdefinitions\DatabaseStepDefinitions.java
 C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\pages\LoginPage.java
 C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\stepdefinitions\MedunnaSignInStepDefinition.java
@@ -15,11 +17,15 @@ C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\runners\Runner.jav
 C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\pages\HomePage.java
 C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\pages\MedunnaHomePage.java
 C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\pages\MedunnaRoomPage.java
+C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\pages\AlloverCommerceMyAccountPage.java
 C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\stepdefinitions\ExcelStepDefinitions.java
 C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\pages\BlueRentalCarHomeworkPage1.java
+C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\utilities\JSUtils.java
 C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\stepdefinitions\BlueRentalCarDefinitions1.java
 C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\runners\GridRunner.java
+C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\pages\AlloverCommerceSignInPage.java
 C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\utilities\Driver.java
+C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\stepdefinitions\AlloverCommerceSignInStepDefinitions.java
 C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\utilities\DBUtils.java
 C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\pages\MedunnaLoginPage.java
 C:\Users\akdem\IdeaProjects\my-cucumber-project\src\test\java\stepdefinitions\RegExStepDefinitions.java
